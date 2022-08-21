@@ -1,0 +1,7 @@
+<strong>Active users</strong>
+
+<br/>
+
+<p *ngFor="let user of activeUser;let i=index">
+    {{user}} | <a (click)="setToInactive(i)">Set to Inactive</a>
+</p>
